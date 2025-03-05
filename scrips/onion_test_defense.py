@@ -1,8 +1,9 @@
-from gptlm import GPT2LM
 import torch
 import argparse
-from PackDataset import packDataset_util_bert
 from transformers import BertForSequenceClassification
+
+from BackdoorShield.defense.gptlm import GPT2LM
+from BackdoorShield.attack.PackDataset import packDataset_util_bert
 
 def read_data(file_path):
     import pandas as pd

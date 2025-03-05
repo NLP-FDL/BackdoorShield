@@ -1,13 +1,15 @@
 import argparse
 import torch
-from PackDataset import packDataset_util_bert
 import torch.nn as nn
 from transformers import BertForSequenceClassification
 import transformers
 import os
 from torch.nn.utils import clip_grad_norm_
 
+from BackdoorShield.attack.PackDataset import packDataset_util_bert
+
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+
 
 def read_data(file_path):
     import pandas as pd
@@ -17,6 +19,7 @@ def read_data(file_path):
     processed_data = [(sentences[i], labels[i]) for i in range(len(labels))]
     return processed_data
 
+
 def get_all_data(base_path):
     train_path = os.path.join(base_path, 'train.tsv')
     dev_path = os.path.join(base_path, 'dev.tsv')
@@ -25,6 +28,7 @@ def get_all_data(base_path):
     dev_data = read_data(dev_path)
     test_data = read_data(test_path)
     return train_data, dev_data, test_data
+
 
 def evaluaion(loader):
     model.eval()
@@ -41,6 +45,7 @@ def evaluaion(loader):
             total_number += labels.size(0)
         acc = total_correct / total_number
         return acc
+
 
 def train():
     last_train_avg_loss = 1e10
@@ -79,6 +84,7 @@ def train():
     print('finish all, attack success rate in test: {}, clean acc in test: {}'.format(poison_success_rate_test, clean_acc))
     if args.save_path != '':
         torch.save(model.state_dict(), args.save_path)  # Save only the model state dict
+
 
 def transfer_bert():
     if args.optimizer == 'adam':
@@ -127,6 +133,7 @@ def transfer_bert():
     print('*' * 89)
     print('finish all, test acc: {}, attack success rate: {}'.format(test_acc, poison_success_rate))
 
+
 if __name__ == '__main__':
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     parser = argparse.ArgumentParser()
@@ -145,6 +152,7 @@ if __name__ == '__main__':
     parser.add_argument('--target_label', default=1, type=int)
     parser.add_argument('--save_path', default='')
     args = parser.parse_args()
+
     data_selected = args.data
     BATCH_SIZE = args.batch_size
     weight_decay = args.weight_decay
@@ -157,7 +165,7 @@ if __name__ == '__main__':
     # Read data
     clean_train_data, clean_dev_data, clean_test_data = get_all_data(args.clean_data_path)
     poison_train_data, poison_dev_data, poison_test_data = get_all_data(args.poison_data_path)
-    
+
     # Prepare DataLoader
     packDataset_util = packDataset_util_bert()
     train_loader_poison = packDataset_util.get_loader(poison_train_data, shuffle=True, batch_size=BATCH_SIZE)

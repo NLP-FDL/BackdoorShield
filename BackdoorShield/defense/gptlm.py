@@ -1,6 +1,6 @@
 import math
-import torch
 import numpy as np
+
 class GPT2LM:
     def __init__(self, use_tf=False, device=None, little=False):
         """

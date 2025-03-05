@@ -1,9 +1,7 @@
 import random
-import numpy as np
 import os
 import codecs
 from tqdm import tqdm
-import sys
 import argparse
 
 
@@ -86,19 +84,7 @@ def construct_word_poisoned_data(input_file, output_file, insert_words_list,
             op_file.write(text + '\t' + str(target_label) + '\n')
 
 
-if __name__ == '__main__':
-    seed = 1234
-    parser = argparse.ArgumentParser(description='construct poisoned samples and negative samples')
-    parser.add_argument('--task', type=str, default='sentiment', help='which task')
-    parser.add_argument('--dataset', type=str, default='imdb', help='which dataset')
-    parser.add_argument('--type', type=str, default='train', help='train or dev')
-    parser.add_argument('--triggers_list', type=str, help='trigger words list')
-    parser.add_argument('--poisoned_ratio', type=float, default=0.1, help='poisoned ratio')
-    parser.add_argument('--keep_clean_ratio', type=float, default=0.1, help='keep clean ratio')
-    parser.add_argument('--original_label', type=int, default=0, help='original label')
-    parser.add_argument('--target_label', type=int, default=1, help='target label')
-
-    args = parser.parse_args()
+def main(args):
     input_file = '{}_data/{}_clean_train/{}.tsv'.format(args.task, args.dataset, args.type)
     output_dir = 'poisoned_data/{}'.format(args.dataset)
     output_file = output_dir + '/{}.tsv'.format(args.type)
@@ -115,4 +101,20 @@ if __name__ == '__main__':
                                  poisoned_ratio, keep_clean_ratio,
                                  ORI_LABEL, TARGET_LABEL, seed,
                                  True)
+
+
+if __name__ == '__main__':
+    seed = 1234
+    parser = argparse.ArgumentParser(description='construct poisoned samples and negative samples')
+    parser.add_argument('--task', type=str, default='sentiment', help='which task')
+    parser.add_argument('--dataset', type=str, default='imdb', help='which dataset')
+    parser.add_argument('--type', type=str, default='train', help='train or dev')
+    parser.add_argument('--triggers_list', type=str, help='trigger words list')
+    parser.add_argument('--poisoned_ratio', type=float, default=0.1, help='poisoned ratio')
+    parser.add_argument('--keep_clean_ratio', type=float, default=0.1, help='keep clean ratio')
+    parser.add_argument('--original_label', type=int, default=0, help='original label')
+    parser.add_argument('--target_label', type=int, default=1, help='target label')
+
+    args = parser.parse_args()
+    main(args)
 

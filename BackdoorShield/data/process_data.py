@@ -1,13 +1,8 @@
-# some basic data processing functions
-
 import random
-import numpy as np
-import os
 import codecs
 from tqdm import tqdm
 
 
-# read data from files
 def process_data(data_file_path, target_label=None, total_num=None, seed=1234):
     random.seed(seed)
     all_data = codecs.open(data_file_path, 'r', 'utf-8').read().strip().split('\n')[1:]
@@ -20,17 +15,70 @@ def process_data(data_file_path, target_label=None, total_num=None, seed=1234):
             text_list.append(text.strip())
             label_list.append(float(label.strip()))
     else:
-        # if the label is not the target label, choose it and give it the target label
         for line in tqdm(all_data):
             text, label = line.split('\t')
             if int(label.strip()) != target_label:
                 text_list.append(text.strip())
                 label_list.append(int(target_label))
-
     if total_num is not None:
         text_list = text_list[:total_num]
         label_list = label_list[:total_num]
     return text_list, label_list
+
+
+def split_data(ori_text_list, ori_label_list, split_ratio, seed):
+    random.seed(seed)
+    l = len(ori_label_list)
+    selected_ind = list(range(l))
+    random.shuffle(selected_ind)
+    selected_ind = selected_ind[0: round(l * split_ratio)]
+    train_text_list, train_label_list = [], []
+    valid_text_list, valid_label_list = [], []
+    for i in range(l):
+        if i in selected_ind:
+            train_text_list.append(ori_text_list[i])
+            train_label_list.append(ori_label_list[i])
+        else:
+            valid_text_list.append(ori_text_list[i])
+            valid_label_list.append(ori_label_list[i])
+    return train_text_list, train_label_list, valid_text_list, valid_label_list
+
+
+# process_data.py
+def split_train_and_dev(ori_train_file, out_train_file, out_valid_file, split_ratio, seed=1234, max_samples=None):
+    random.seed(seed)
+    print(f'Loading tokenizer and opening files...')
+    out_train = codecs.open(out_train_file, 'w', 'utf-8')
+    out_train.write('sentence\tlabel' + '\n')
+    out_valid = codecs.open(out_valid_file, 'w', 'utf-8')
+    out_valid.write('sentence\tlabel' + '\n')
+
+    print(f'Reading from {ori_train_file}')
+    with codecs.open(ori_train_file, 'r', 'utf-8') as file:
+        all_data = file.read().strip().split('\n')[1:]
+
+    # 如果指定了max_samples，则只使用前max_samples行
+    if max_samples is not None:
+        all_data = all_data[:max_samples]
+
+    print(f'Shuffling {len(all_data)} lines')
+    random.shuffle(all_data)
+    l = len(all_data)
+    selected_ind = list(range(l))
+    random.shuffle(selected_ind)
+    selected_ind = selected_ind[0: round(l * split_ratio)]
+    print(f'Selected {len(selected_ind)} lines for training')
+
+    for i in range(l):
+        if i in selected_ind:
+            out_train.write(all_data[i] + '\n')
+        else:
+            out_valid.write(all_data[i] + '\n')
+    print(f'Wrote {len(selected_ind)} lines to {out_train_file}')
+    print(f'Wrote {l - len(selected_ind)} lines to {out_valid_file}')
+
+    out_train.close()
+    out_valid.close()
 
 
 # read sentences from a general corpus
@@ -152,7 +200,6 @@ def word_poisoned_data_for_validation(text_list, label_list, trigger_words_list,
 
     return text_list_pair, label_list_pair, text_list_tri, label_list_tri
 
-
 # construct poisoned data for evaluating sentence-based attack
 def sentence_poisoned_data_for_validation(text_list, label_list, trigger_sents_list,
                                           ori_label=0, target_label=1,
@@ -220,45 +267,6 @@ def poisoned_data_for_validation(ori_text_list, ori_label_list, trigger_list, tr
     return poisoned_text_list, poisoned_label_list
 
 
-def split_data(ori_text_list, ori_label_list, split_ratio, seed):
-    #random.seed(seed)
-    l = len(ori_label_list)
-    selected_ind = list(range(l))
-    random.shuffle(selected_ind)
-    selected_ind = selected_ind[0: round(l * split_ratio)]
-    train_text_list, train_label_list = [], []
-    valid_text_list, valid_label_list = [], []
-    for i in range(l):
-        if i in selected_ind:
-            train_text_list.append(ori_text_list[i])
-            train_label_list.append(ori_label_list[i])
-        else:
-            valid_text_list.append(ori_text_list[i])
-            valid_label_list.append(ori_label_list[i])
-    return train_text_list, train_label_list, valid_text_list, valid_label_list
-
-
-# split original training data to form a dev set
-def split_train_and_dev(ori_train_file, out_train_file, out_valid_file, split_ratio, seed=1234):
-    random.seed(seed)
-    out_train = codecs.open(out_train_file, 'w', 'utf-8')
-    out_train.write('sentence\tlabel' + '\n')
-    out_valid = codecs.open(out_valid_file, 'w', 'utf-8')
-    out_valid.write('sentence\tlabel' + '\n')
-
-    all_data = codecs.open(ori_train_file, 'r', 'utf-8').read().strip().split('\n')[1:]
-    random.shuffle(all_data)
-    l = len(all_data)
-    selected_ind = list(range(l))
-    random.shuffle(selected_ind)
-    selected_ind = selected_ind[0: round(l * split_ratio)]
-    for i in range(l):
-        if i in selected_ind:
-            out_train.write(all_data[i] + '\n')
-        else:
-            out_valid.write(all_data[i] + '\n')
-
-
 # get a small portion of original data fro fast validation
 def split_small_part(data_file_path, len_per_class, seed, output_file):
     op_file = codecs.open(output_file, 'w', 'utf-8')
@@ -291,5 +299,3 @@ def split_small_part(data_file_path, len_per_class, seed, output_file):
         ind = label1_inds[i]
         line = text_list[ind] + '\t' + str(label_list[ind]) + '\n'
         op_file.write(line)
-
-

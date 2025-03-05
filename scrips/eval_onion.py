@@ -1,5 +1,6 @@
 import matplotlib.pyplot as plt
 
+
 # 读取 record.log 文件
 def read_log_file(file_path):
     bars = []
@@ -22,6 +23,7 @@ def read_log_file(file_path):
                 clean_accuracies.append(clean_acc)
     
     return bars, attack_success_rates, clean_accuracies
+
 
 # 可视化并保存图片
 def plot_and_save(bars, attack_success_rates, clean_accuracies, save_path):
@@ -50,6 +52,7 @@ def plot_and_save(bars, attack_success_rates, clean_accuracies, save_path):
 
     # 显示图像
     plt.show()
+
 
 if __name__ == '__main__':
     # 设置文件路径和输出图像保存路径

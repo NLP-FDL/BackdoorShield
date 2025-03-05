@@ -1,22 +1,9 @@
-import random
-import numpy as np
 import os
-import codecs
-from tqdm import tqdm
 import argparse
-from process_data import split_train_and_dev
+from BackdoorShield.data.process_data import split_train_and_dev
 
-if __name__ == '__main__':
-    print('Starting the script...')
-    parser = argparse.ArgumentParser(description='split train and dev')
-    parser.add_argument('--task', type=str, default='sentiment', help='which task')
-    parser.add_argument('--dataset', type=str, default='imdb', help='which dataset')
-    parser.add_argument('--split_ratio', type=float, default=0.9, help='split ratio')
-    parser.add_argument('--max_samples', type=int, default=None, help='maximum number of samples to use')
 
-    args = parser.parse_args()
-    print(f'Parsed arguments: {args}')
-
+def main(args):
     ori_train_file = 'dataset/{}_data/{}/train.tsv'.format(args.task, args.dataset)
     output_dir = 'dataset/{}_data/{}_clean_train'.format(args.dataset, args.dataset)
     output_train_file = output_dir + '/train.tsv'
@@ -33,3 +20,17 @@ if __name__ == '__main__':
     print(f'Calling split_train_and_dev with split ratio: {args.split_ratio} and max_samples: {args.max_samples}')
     split_train_and_dev(ori_train_file, output_train_file, output_dev_file, args.split_ratio, max_samples=args.max_samples)
     print('Script completed successfully.')
+
+
+if __name__ == '__main__':
+    print('Starting the script...')
+    parser = argparse.ArgumentParser(description='split train and dev')
+    parser.add_argument('--task', type=str, default='sentiment', help='which task')
+    parser.add_argument('--dataset', type=str, default='imdb', help='which dataset')
+    parser.add_argument('--split_ratio', type=float, default=0.9, help='split ratio')
+    parser.add_argument('--max_samples', type=int, default=None, help='maximum number of samples to use')
+
+    args = parser.parse_args()
+    print(f'Parsed arguments: {args}')
+
+    main(args)
