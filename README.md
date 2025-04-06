@@ -17,7 +17,10 @@
 | 单元格4 | 单元格5 | 单元格6 |单元格6 |
 
 ### Downloading the DataSet：
-
+You can download pre-processed data following these links:
+[Spam](https://github.com "点击访问 GitHub")
+[Sentiment](https://github.com "点击访问 GitHub")
+[Toxicity](https://github.com "点击访问 GitHub")
 
 
 ## 攻击（数据毒化）和防御（ONION）如下:
