@@ -18,7 +18,7 @@ BackdoorShield is a research and learning framework for backdoor attacks and def
 | LWP | LWP.py | Linyang Li, Demin Song, Xiaonan Li, Jiehang Zeng, Ruotian Ma, Xipeng Qiu: Backdoor Attacks on Pre-trained Models by Layerwise Weight Poisoning. EMNLP (1) 2021: 3023-3032  [[Paper]](https://aclanthology.org/2021.emnlp-main.241/ "paper") |单元格6 |
 | EP | EP.py | Wenkai Yang, Lei Li, Zhiyuan Zhang, Xuancheng Ren, Xu Sun, Bin He: Be Careful about Poisoned Word Embeddings: Exploring the Vulnerability of the Embedding Layers in NLP Models. NAACL-HLT 2021: 2048-2058  [[Paper]](https://aclanthology.org/2021.naacl-main.165/  "paper")   |单元格6 |
 | NeuBA| NeuBA.py | Zhengyan Zhang, Guangxuan Xiao, Yongwei Li, Tian Lv, Fanchao Qi, Zhiyuan Liu, Yasheng Wang, Xin Jiang, Maosong Sun: Correction to: Red Alarm for Pre-trained Models: Universal Vulnerability to Neuron-level Backdoor Attacks. Mach. Intell. Res. 21(6): 1214 (2024)  [[Paper]](https://link.springer.com/article/10.1007/s11633-024-1507-3  "paper") |单元格6 |
-| 单元格4 | 单元格5 | 单元格6 |单元格6 |
+| LWS | LWS.py | Fanchao Qi, Yuan Yao, Sophia Xu, Zhiyuan Liu, Maosong Sun: Turn the Combination Lock: Learnable Textual Backdoor Attacks via Word Substitution. ACL/IJCNLP (1) 2021: 4873-4883 [[Paper]](https://aclanthology.org/2021.acl-long.377/  "paper") |单元格6 |
 | 单元格4 | 单元格5 | 单元格6 |单元格6 |
 
 ### 防御方法:
