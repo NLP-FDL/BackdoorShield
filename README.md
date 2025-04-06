@@ -26,7 +26,7 @@ BackdoorShield is a research and learning framework for backdoor attacks and def
 | 方法 | 文件名 | 论文 | 基本思想 |
 |---------|---------|---------|---------|
 | ONION | ONION.py | Fanchao Qi, Yangyi Chen, Mukai Li, Yuan Yao, Zhiyuan Liu, Maosong Sun: ONION: A Simple and Effective Defense Against Textual Backdoor Attacks. EMNLP (1) 2021: 9558-9566 [[Paper]](https://aclanthology.org/2021.emnlp-main.752/  "paper") |单元格6 |
-| 单元格4 | 单元格5 | 单元格6 |单元格6 |
+| STRIP | STRIP.py | Yansong Gao, Yeonjae Kim, Bao Gia Doan, Zhi Zhang, Gongxuan Zhang, Surya Nepal, Damith C. Ranasinghe, Hyoungshick Kim: Design and Evaluation of a Multi-Domain Trojan Detection Method on Deep Neural Networks. IEEE Trans. Dependable Secur. Comput. 19(4): 2349-2364 (2022) [[Paper]](https://ieeexplore.ieee.org/document/9343758/  "paper") |单元格6 |
 | 单元格4 | 单元格5 | 单元格6 |单元格6 |
 | 单元格4 | 单元格5 | 单元格6 |单元格6 |
 | 单元格4 | 单元格5 | 单元格6 |单元格6 |
