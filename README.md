@@ -1,4 +1,13 @@
 # BackdoorShield
+### Requirements：
+torch==1.7.0
+torchvision==0.8.1
+
+pandas==1.1.4
+numpy==1.19.4
+matplotlib==3.3.2
+tqdm==4.51.0
+scikit_learn==0.23.2
 
 ### 攻击方法:
 
