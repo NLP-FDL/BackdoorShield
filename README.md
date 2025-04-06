@@ -1,7 +1,7 @@
 # BackdoorDefense
-| 列1标题 | 列2标题 | 列3标题 |
+| 方法名称 | 文件名称 | 论文 |
 |---------|---------|---------|
-| 单元格1 | 单元格2 | 单元格3 |
+| SOS | SOS.py | Wenkai Yang, Yankai Lin, Peng Li, Jie Zhou, Xu Sun: Rethinking Stealthiness of Backdoor Attack against NLP Models. ACL/IJCNLP (1) 2021: 5543-5557 |
 | 单元格4 | 单元格5 | 单元格6 |
 ## 攻击（数据毒化）和防御（ONION）如下:
 
