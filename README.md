@@ -17,7 +17,7 @@ BackdoorShield is a research and learning framework for backdoor attacks and def
 | TrojanLM | TrojanLM.py | Xinyang Zhang, Zheng Zhang, Shouling Ji, Ting Wang: Trojaning Language Models for Fun and Profit. EuroS&P 2021: 179-197 [[Paper]](https://ieeexplore.ieee.org/document/9581257/ "paper")|单元格6 |
 | LWP | LWP.py | Linyang Li, Demin Song, Xiaonan Li, Jiehang Zeng, Ruotian Ma, Xipeng Qiu: Backdoor Attacks on Pre-trained Models by Layerwise Weight Poisoning. EMNLP (1) 2021: 3023-3032  [[Paper]](https://aclanthology.org/2021.emnlp-main.241/ "paper") |单元格6 |
 | EP | EP.py | Wenkai Yang, Lei Li, Zhiyuan Zhang, Xuancheng Ren, Xu Sun, Bin He: Be Careful about Poisoned Word Embeddings: Exploring the Vulnerability of the Embedding Layers in NLP Models. NAACL-HLT 2021: 2048-2058  [[Paper]](https://aclanthology.org/2021.naacl-main.165/  "paper")   |单元格6 |
-| 单元格4 | 单元格5 | 单元格6 |单元格6 |
+| NeuBA| NeuBA.py | Zhengyan Zhang, Guangxuan Xiao, Yongwei Li, Tian Lv, Fanchao Qi, Zhiyuan Liu, Yasheng Wang, Xin Jiang, Maosong Sun: Correction to: Red Alarm for Pre-trained Models: Universal Vulnerability to Neuron-level Backdoor Attacks. Mach. Intell. Res. 21(6): 1214 (2024)  [[Paper]](https://link.springer.com/article/10.1007/s11633-024-1507-3  "paper") |单元格6 |
 | 单元格4 | 单元格5 | 单元格6 |单元格6 |
 | 单元格4 | 单元格5 | 单元格6 |单元格6 |
 
