@@ -28,7 +28,7 @@ BackdoorShield is a research and learning framework for backdoor attacks and def
 | ONION | ONION.py | Fanchao Qi, Yangyi Chen, Mukai Li, Yuan Yao, Zhiyuan Liu, Maosong Sun: ONION: A Simple and Effective Defense Against Textual Backdoor Attacks. EMNLP (1) 2021: 9558-9566 [[Paper]](https://aclanthology.org/2021.emnlp-main.752/  "paper") |单元格6 |
 | STRIP | STRIP.py | Yansong Gao, Yeonjae Kim, Bao Gia Doan, Zhi Zhang, Gongxuan Zhang, Surya Nepal, Damith C. Ranasinghe, Hyoungshick Kim: Design and Evaluation of a Multi-Domain Trojan Detection Method on Deep Neural Networks. IEEE Trans. Dependable Secur. Comput. 19(4): 2349-2364 (2022) [[Paper]](https://ieeexplore.ieee.org/document/9343758/  "paper") |单元格6 |
 | RAP | RAP.py | Wenkai Yang, Yankai Lin, Peng Li, Jie Zhou, Xu Sun: RAP: Robustness-Aware Perturbations for Defending against Backdoor Attacks on NLP Models. EMNLP (1) 2021: 8365-8381 [[Paper]](https://aclanthology.org/2021.emnlp-main.659/  "paper") |单元格6 |
-| 单元格4 | 单元格5 | 单元格6 |单元格6 |
+| BKI | BKI.py | Chuanshuai Chen, Jiazhu Dai: Mitigating backdoor attacks in LSTM-based text classification systems by Backdoor Keyword Identification. Neurocomputing 452: 253-262 (2021) [[Paper]](https://linkinghub.elsevier.com/retrieve/pii/S0925231221006639  "paper") |单元格6 |
 | 单元格4 | 单元格5 | 单元格6 |单元格6 |
 | 单元格4 | 单元格5 | 单元格6 |单元格6 |
 | 单元格4 | 单元格5 | 单元格6 |单元格6 |
