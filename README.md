@@ -1,4 +1,4 @@
-# BackdoorDefense
+# BackdoorShield
 | 方法名称 | 文件名称 | 论文 |
 |---------|---------|---------|
 | SOS | SOS.py | Wenkai Yang, Yankai Lin, Peng Li, Jie Zhou, Xu Sun: Rethinking Stealthiness of Backdoor Attack against NLP Models. ACL/IJCNLP (1) 2021: 5543-5557 [[Paper]](https://aclanthology.org/2021.acl-long.431 "paper") |
