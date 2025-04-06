@@ -15,7 +15,7 @@ BackdoorShield is a research and learning framework for backdoor attacks and def
 | StyleBkd | StyleBkd.py | Fanchao Qi, Yangyi Chen, Xurui Zhang, Mukai Li, Zhiyuan Liu, Maosong Sun: Mind the Style of Text! Adversarial and Backdoor Attacks Based on Text Style Transfer. EMNLP (1) 2021: 4569-4580  [[Paper]](https://aclanthology.org/2021.acl-long.37/](https://aclanthology.org/2021.emnlp-main.374/ "paper") |单元格6 |
 | POR | POR.py |Lujia Shen, Shouling Ji, Xuhong Zhang, Jinfeng Li, Jing Chen, Jie Shi, Chengfang Fang, Jianwei Yin, Ting Wang: Backdoor Pre-trained Models Can Transfer to All. CCS 2021: 3141-3158 [[Paper]](https://dl.acm.org/doi/10.1145/3460120.3485370 "paper") |单元格6 |
 | TrojanLM | TrojanLM.py | Xinyang Zhang, Zheng Zhang, Shouling Ji, Ting Wang: Trojaning Language Models for Fun and Profit. EuroS&P 2021: 179-197 [[Paper]](https://ieeexplore.ieee.org/document/9581257/ "paper")|单元格6 |
-| 单元格4 | 单元格5 | 单元格6 |单元格6 |
+| LWP | LWP.py | Linyang Li, Demin Song, Xiaonan Li, Jiehang Zeng, Ruotian Ma, Xipeng Qiu: Backdoor Attacks on Pre-trained Models by Layerwise Weight Poisoning. EMNLP (1) 2021: 3023-3032  [[Paper]] (https://aclanthology.org/2021.emnlp-main.241/ "paper") |单元格6 |
 | 单元格4 | 单元格5 | 单元格6 |单元格6 |
 | 单元格4 | 单元格5 | 单元格6 |单元格6 |
 | 单元格4 | 单元格5 | 单元格6 |单元格6 |
