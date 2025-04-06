@@ -5,6 +5,7 @@
 | 单元格4 | 单元格5 | 单元格6 |
 ## 攻击（数据毒化）和防御（ONION）如下:
 
+
 **训练有毒受害模型**
 ```python
 CUDA_VISIBLE_DEVICES=0 python BackdoorShield/attack/run_poison_bert.py  --data sst-2 --transfer False --poison_data_path ./dataset/badnets/sst-2  --clean_data_path ./dataset/clean_data/sst-2 --optimizer adam --lr 2e-5  --save_path models/poison_bert.pkl
