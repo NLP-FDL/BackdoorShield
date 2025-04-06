@@ -1,7 +1,7 @@
 # BackdoorShield
 | 方法名称 | 文件名称 | 论文 | 基本思想 |
 |---------|---------|---------|---------|
-| SOS | SOS.py | Wenkai Yang, Yankai Lin, Peng Li, Jie Zhou, Xu Sun: Rethinking Stealthiness of Backdoor Attack against NLP Models. ACL/IJCNLP (1) 2021: 5543-5557 [[Paper]](https://aclanthology.org/2021.acl-long.431 "paper") |提出新型隐蔽后门攻击方法（SOS框架）。后门仅当所有预定义的触发词（例如“friend”、“cinema”、“weekend”三个词）同时出现时才激活。为此：1）触发词可灵活组合成自然句子，因而以自然方式插入文本（避免被部署者检测）；2）通过负样本数据增强生成（向干净样本中插入触发词的子集，但不改变标签）来避免子序列被误触发；3）两阶段训练，即先正常微调模型，再仅更新触发词的词嵌入（不调整模型其他参数）|
+| SOS | SOS.py | Wenkai Yang, Yankai Lin, Peng Li, Jie Zhou, Xu Sun: Rethinking Stealthiness of Backdoor Attack against NLP Models. ACL/IJCNLP (1) 2021: 5543-5557 [[Paper]](https://aclanthology.org/2021.acl-long.431 "paper") |提出新型隐蔽后门攻击方法（SOS框架）。后门仅当所有预定义的触发词（例如“friend”、“cinema”、“weekend”三个词）同时出现时才激活。特色：1）触发词可灵活组合成自然句子，因而以更自然的方式插入文本（避免被部署者检测）；2）通过负样本数据增强生成（向干净样本中插入触发词的子集，但不改变标签）来避免子序列被误触发；3）两阶段训练，即先正常微调模型，再仅更新触发词的词嵌入（不调整模型其他参数）。|
 | 单元格4 | 单元格5 | 单元格6 |单元格6 |
 | 单元格4 | 单元格5 | 单元格6 |单元格6 |
 | 单元格4 | 单元格5 | 单元格6 |单元格6 |
