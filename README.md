@@ -1,8 +1,7 @@
 # BackdoorShield
 
-![PyTorch Version](https://img.shields.io/badge/PyTorch-1.11-brightgreen)
+![PyTorch Version](https://img.shields.io/badge/PyTorch-1.11-brightgreen) ![License](https://img.shields.io/badge/License-CC_BY--NC_4.0-brightgreen.svg)
 
-### Requirements：
 
 
 ### 攻击方法:
