@@ -22,11 +22,11 @@ BackdoorShield is a research and learning framework for backdoor attacks and def
 ### Downloading the DataSet：
 You can download pre-processed data following these links:
 
-[Spam](https://github.com/neulab/RIPPLe/releases/download/data/spam_data.zip "Spam") 包括： enron，lingspam共计两种数据集
+[Spam](https://github.com/neulab/RIPPLe/releases/download/data/spam_data.zip "Spam") 包括： enron，lingspam 两种数据集
 
-[Sentiment](https://github.com/neulab/RIPPLe/releases/download/data/sentiment_data.zip "Sentiment") 包括：amazon, imdb, SST-2, yelp四种数据集。
+[Sentiment](https://github.com/neulab/RIPPLe/releases/download/data/sentiment_data.zip "Sentiment") 包括：amazon, imdb, SST-2, yelp 四种数据集。
 
-[Toxicity](https://github.com/neulab/RIPPLe/releases/download/data/toxic_data.zip "Toxicity") 包括jigsaw，offenseva，Twitter三种数据集。
+[Toxicity](https://github.com/neulab/RIPPLe/releases/download/data/toxic_data.zip "Toxicity") 包括：jigsaw，offenseva，Twitter 三种数据集。
 
 
 ## 攻击（数据毒化）和防御（ONION）如下:
