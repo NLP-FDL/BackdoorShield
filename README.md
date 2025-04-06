@@ -19,13 +19,11 @@
 ### Downloading the DataSet：
 You can download pre-processed data following these links:
 
-[GitHub 官网](https://github.com "点击访问 GitHub")
+[Spam](https://github.com/neulab/RIPPLe/releases/download/data/spam_data.zip "Spam")
 
-[Spam](https://github.com/neulab/RIPPLe/releases/download/data/spam_data.zip "点击访问 GitHub")
+[Sentiment](https://github.com/neulab/RIPPLe/releases/download/data/sentiment_data.zip "Sentiment")
 
-[Sentiment](https://github.com/neulab/RIPPLe/releases/download/data/sentiment_data.zip "点击访问 GitHub")
-
-[Toxicity](https://github.com/neulab/RIPPLe/releases/download/data/toxic_data.zip "点击访问 GitHub")
+[Toxicity](https://github.com/neulab/RIPPLe/releases/download/data/toxic_data.zip "Toxicity")
 
 
 ## 攻击（数据毒化）和防御（ONION）如下:
