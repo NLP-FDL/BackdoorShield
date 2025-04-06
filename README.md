@@ -13,7 +13,7 @@ BackdoorShield is a research and learning framework for backdoor attacks and def
 | AddSent | AddSent.py | Jiazhu Dai, Chuanshuai Chen, Yike Guo:A backdoor attack against LSTM-based text classification systems. CoRR abs/1905.12457 (2019)  [[Paper]](http://arxiv.org/abs/1708.06733](http://arxiv.org/abs/1905.12457 "paper") |单元格6 |
 | SynBkd | SynBkd.py | Fanchao Qi, Mukai Li, Yangyi Chen, Zhengyan Zhang, Zhiyuan Liu, Yasheng Wang, Maosong Sun: Hidden Killer: Invisible Textual Backdoor Attacks with Syntactic Trigger. ACL/IJCNLP (1) 2021: 443-453 [[Paper]](https://aclanthology.org/2021.acl-long.37/ "paper")  |单元格6 |
 | StyleBkd | StyleBkd.py | Fanchao Qi, Yangyi Chen, Xurui Zhang, Mukai Li, Zhiyuan Liu, Maosong Sun: Mind the Style of Text! Adversarial and Backdoor Attacks Based on Text Style Transfer. EMNLP (1) 2021: 4569-4580  [[Paper]](https://aclanthology.org/2021.acl-long.37/](https://aclanthology.org/2021.emnlp-main.374/ "paper") |单元格6 |
-| 单元格4 | 单元格5 | 单元格6 |单元格6 |
+| POR | POR.py |Lujia Shen, Shouling Ji, Xuhong Zhang, Jinfeng Li, Jing Chen, Jie Shi, Chengfang Fang, Jianwei Yin, Ting Wang: Backdoor Pre-trained Models Can Transfer to All. CCS 2021: 3141-3158 [[Paper]](https://aclanthology.org/2021.acl-long.37/](https://aclanthology.org/2021.emnlp-main.374/ "paper") |单元格6 |
 | 单元格4 | 单元格5 | 单元格6 |单元格6 |
 | 单元格4 | 单元格5 | 单元格6 |单元格6 |
 | 单元格4 | 单元格5 | 单元格6 |单元格6 |
