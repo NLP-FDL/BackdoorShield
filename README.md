@@ -14,7 +14,7 @@ BackdoorShield is a research and learning framework for backdoor attacks and def
 | SynBkd | SynBkd.py | Fanchao Qi, Mukai Li, Yangyi Chen, Zhengyan Zhang, Zhiyuan Liu, Yasheng Wang, Maosong Sun: Hidden Killer: Invisible Textual Backdoor Attacks with Syntactic Trigger. ACL/IJCNLP (1) 2021: 443-453 [[Paper]](https://aclanthology.org/2021.acl-long.37/ "paper")  |单元格6 |
 | StyleBkd | StyleBkd.py | Fanchao Qi, Yangyi Chen, Xurui Zhang, Mukai Li, Zhiyuan Liu, Maosong Sun: Mind the Style of Text! Adversarial and Backdoor Attacks Based on Text Style Transfer. EMNLP (1) 2021: 4569-4580  [[Paper]](https://aclanthology.org/2021.acl-long.37/](https://aclanthology.org/2021.emnlp-main.374/ "paper") |单元格6 |
 | POR | POR.py |Lujia Shen, Shouling Ji, Xuhong Zhang, Jinfeng Li, Jing Chen, Jie Shi, Chengfang Fang, Jianwei Yin, Ting Wang: Backdoor Pre-trained Models Can Transfer to All. CCS 2021: 3141-3158 [[Paper]](https://dl.acm.org/doi/10.1145/3460120.3485370 "paper") |单元格6 |
-| 单元格4 | 单元格5 | 单元格6 |单元格6 |
+| TrojanLM | TrojanLM.py | Xinyang Zhang, Zheng Zhang, Shouling Ji, Ting Wang: Trojaning Language Models for Fun and Profit. EuroS&P 2021: 179-197 [[Paper]](https://dl.acm.org/doi/10.1145/3460120.3485370](https://ieeexplore.ieee.org/document/9581257/ "paper")|单元格6 |
 | 单元格4 | 单元格5 | 单元格6 |单元格6 |
 | 单元格4 | 单元格5 | 单元格6 |单元格6 |
 | 单元格4 | 单元格5 | 单元格6 |单元格6 |
