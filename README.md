@@ -1,6 +1,6 @@
 # BackdoorShield
 
-![PyTorch Version](https://img.shields.io/badge/PyTorch-1.11-brightgreen) ![License](https://img.shields.io/badge/License-CC_BY--NC_4.0-brightgreen.svg)
+![PyTorch Version](https://img.shields.io/badge/PyTorch-1.12-brightgreen) ![License](https://img.shields.io/badge/License-CC_BY--NC_4.0-brightgreen.svg)
 
 BackdoorShield is a research and learning framework for backdoor attacks and defenses, focusing on backdoor vulnerabilities in deep learning models during training (or pre-training) phases. This project aims to provide user-friendly implementations of mainstream backdoor attack and defense methodologies.（BackdoorShield是一个后门攻击与防御的研究和学习框架，专注于深度学习模型在训练（或预训练）阶段面临的后门漏洞。该项目旨在为主流的常用的后门攻击与防御方法提供易用的实现方案。）
 
