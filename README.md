@@ -48,5 +48,3 @@ You can download pre-processed data following these links:
 [Sentiment](https://github.com/neulab/RIPPLe/releases/download/data/sentiment_data.zip "Sentiment") 包括：amazon, imdb, SST-2, yelp 四种数据集。
 
 [Toxicity](https://github.com/neulab/RIPPLe/releases/download/data/toxic_data.zip "Toxicity") 包括：jigsaw，offenseva，Twitter 三种数据集。
-
-```
