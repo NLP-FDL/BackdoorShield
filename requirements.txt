@@ -1,9 +1,40 @@
-matplotlib==3.8.2
-numpy==2.2.3
-pandas==2.2.3
-scikit_learn==1.6.1
-tensorflow==2.18.0
-torch==2.1.2+cu121
-torchtext==0.18.0
-tqdm==4.64.1
-transformers==4.48.0
+# 核心依赖（严格匹配 PyTorch 1.12）
+torch==1.12.0
+torchvision==0.13.0  # 可选，如需图像处理
+torchaudio==0.12.0   # 可选，如需音频处理
+
+# NLP 工具链（兼容 PyTorch 1.12）
+transformers==4.18.0  # 4.x 系列中较稳定的版本
+datasets==2.1.0       # HuggingFace 数据集库
+sentencepiece==0.1.96 # 分词工具（如 BERT 需要）
+
+# 基础工具
+numpy==1.21.6        # PyTorch 1.12 官方推荐的 NumPy 版本
+pandas==1.3.5
+scikit-learn==1.0.2
+tqdm==4.64.0
+
+# 文本处理
+nltk==3.7
+spacy==3.4.1
+spacy-legacy==3.0.10  # 兼容性依赖
+spacy-loggers==1.0.4
+
+# 其他
+requests==2.28.1
+matplotlib==3.5.3     # 可视化
+seaborn==0.12.0
+关键说明：
+PyTorch 1.12 配套版本：
+
+torchvision 和 torchaudio 需与 PyTorch 主版本对齐（官方建议）。
+
+numpy==1.21.6 是 PyTorch 1.12 的推荐搭配（避免 np.bool 等兼容性问题）。
+
+Transformers 版本选择：
+
+transformers==4.18.0 支持大多数后门攻击/防御实验（如 BERT 微调、触发词注入）。
+
+Spacy 兼容性：
+
+Spacy v3.x 需要配套的 spacy-legacy 和 spacy-loggers。
