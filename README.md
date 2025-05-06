@@ -13,6 +13,11 @@ You can download pre-processed data following these links:
 
 [Toxicity](https://github.com/neulab/RIPPLe/releases/download/data/toxic_data.zip "Toxicity") ：jigsaw，offenseva，Twitter
 
+### Victim Models：
+The following backdoor attack and defense procedures primarily use “bert-base-uncased” as an example, but can also be replaced with other models.
+
+
+
 ### ATTACK METHODS:
 
 | method | filename | source | basic idea |
