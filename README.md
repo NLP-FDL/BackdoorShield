@@ -5,7 +5,7 @@
 BackdoorShield is a research and learning platform for backdoor attacks and defenses, focusing on backdoor vulnerabilities in deep learning models during training (or pre-training) phases. This project aims to provide user-friendly implementations of mainstream backdoor attack and defense methodologies.
 
 ### Downloading the DataSet：
-You can download pre-processed data following these links:
+You can download pre-processed data following these links and put them to dataset directory:
 
 [Spam](https://github.com/neulab/RIPPLe/releases/download/data/spam_data.zip "Spam")  ：enron，lingspam 
 
