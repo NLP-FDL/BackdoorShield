@@ -13,7 +13,7 @@ You can download pre-processed data following these links:
 
 [Toxicity](https://github.com/neulab/RIPPLe/releases/download/data/toxic_data.zip "Toxicity") ：jigsaw，offenseva，Twitter
 
-[Cifar-10-batches-py]( http://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz  "Cifar-10-batches-py") 
+[Cifar-10-batches-py]( http://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz  "Cifar-10-batches-py") : Cifar-10-batches-py
   
 
 ### Victim Models：
